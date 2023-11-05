@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="option.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+</head>
+
+<body>
+    <section class="tools">
+        <div class="options">
+            <select name="font-family">
+                <option value="monospace">MonoSpace</option>
+                <option valiue="sans-serif">Sans-Serif</option>
+                <option value="sans">Sans pro</option>
+            </select>
+            <input type="number" id="fontsize" name="fontsize" min="8" max="40" aria-placeholder="font-size"></input>
+            <span class="material-symbols-outlined">
+                format_bold
+            </span>
+            <span class="material-symbols-outlined class= option-btn">
+                format_italic
+            </span>
+            <span class="material-symbols-outlined class= option-btn">
+                format_underlined
+            </span>
+            <span class="material-symbols-outlined class= option-btn">
+                format_align_left
+            </span>
+            <span class="material-symbols-outlined class= option-btn">
+                format_align_center
+            </span>
+            <span class="material-symbols-outlined class= option-btn">
+                format_align_right
+            </span>
+            <span class="material-symbols-outlined class= option-btn">
+                palette
+            </span>
+            <span class="material-symbols-outlined class= option-btn">
+                format_color_fill
+            </span>
+
+
+        </div>
+        <div class="bottom-section">
+            <div id="active-cell">null</div>
+            <input oninput="onChangeFontSize" type="text" class="expression" placeholder="f( x )" />
+        </div>
+    </section>
+    <section class="root-container">
+        <div class="header"></div>
+        <div class="body">
+            <div class="sno"></div>
+            <div class="main"></div>
+        </div>
+    </section>
+
+
+    <script src="./option.js"></script>
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
