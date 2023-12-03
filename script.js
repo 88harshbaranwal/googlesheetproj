@@ -29,7 +29,7 @@ function createSerialNumberCells(){
 function createRow(rowNumber){
     const row = document.createElement("div");
     row.className = "row";
-    for(let i=0;i<=columns;i++){
+    for(let i=1;i<=columns;i++){
         const cell = document.createElement("div");
         cell.className = "main-cell cell";
         cell.contentEditable = true;
@@ -43,7 +43,7 @@ function createRow(rowNumber){
 }
 
 function buildMainSection(){
-    for(let i=0;i<=rows;i++){
+    for(let i=1;i<=rows;i++){
         createRow(i);
     }
 }
